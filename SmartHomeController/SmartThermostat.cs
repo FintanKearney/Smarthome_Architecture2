@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SmartHomeController
 {
-    internal class SmartThermostat
+    internal class SmartThermostat: SmartDevice
     {
         //private fields
         private double currentTemperature;
@@ -24,5 +24,24 @@ namespace SmartHomeController
         }
 
         //constructor
+        public SmartThermostat(int smartDeviceID, string smartDeviceName, bool smartDeviceStatus, double currentTemperature, double targetTemperature) : base(smartDeviceID, smartDeviceName, smartDeviceStatus)
+        {
+
+        }
+
+        public void SetTemperature()
+        {
+
+        }
+
+        public void SetCurrentTemperature()
+        {
+
+        }
+
+        public override void GetStatus()
+        {
+
+        }
     }
 }
